@@ -14,10 +14,10 @@ class App extends React.Component {
           <Header />
           <Switch>
             <Route exact path="/" render={props => <Home {...props} />} />
-            <Route path="/about" component={props => <About {...props} />} />
+            <Route path="/about" render={props => <About {...props} />} />
             <Route
               path="/article/:articleId"
-              component={props => <Article {...props} />}
+              render={props => <Article {...props} />}
             />
           </Switch>
         </>
